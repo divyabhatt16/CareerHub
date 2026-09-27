@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 230px;
+  background: #172033;
+  color: white;
+  padding: 30px 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 40px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar a {
+  color: #dce2ef;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.sidebar a:hover {
+  background: #26344f;
+}
+
+/* Main */
+
+.main-content {
+  flex: 1;
+  padding: 35px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #777;
+}
+
+header button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Statistics */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card h3 {
+  color: #777;
+  font-size: 15px;
+}
+
+.stat-card p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Applications */
+
+.applications {
+  margin-top: 35px;
+}
+
+.applications h2 {
+  margin-bottom: 20px;
+}
+
+.job-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-card p {
+  color: #777;
+  margin-top: 5px;
+}
+
+.status {
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.interview {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.pending {
+  background: #e8e8e8;
+  color: #555;
+}
+
+.selected {
+  background: #d4edda;
+  color: #155724;
+}
+.applied {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+.job-card button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
